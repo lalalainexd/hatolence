@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/victim_counts.json?bias%5B0%5D=cat&bias%5B1%5D=turtle
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Jun 2013 22:55:39 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"13c2197af63396cd56b35f4eef6d70f4\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3d48f0f8b6e1c31788fbe417cb3765cd
+      X-Runtime:
+      - '0.021448'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "[{\"total\":1,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"poked\"}},{\"total\":2,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":3,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":4,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"arson\"}},{\"total\":11,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"poked\"}},{\"total\":12,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":13,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":14,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"arson\"}}]"
+    http_version: 
+  recorded_at: Sat, 01 Jun 2013 22:55:39 GMT
+recorded_with: VCR 2.5.0

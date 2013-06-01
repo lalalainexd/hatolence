@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/victim_counts.json?offense%5B0%5D=poked&offense%5B1%5D=dropped&offense%5B2%5D=vandalism
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Jun 2013 22:55:39 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"7b603f862952d6294e57b3d4b99fa8d6\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7e56325c5f238cb41262ecca64526336
+      X-Runtime:
+      - '0.026900'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "[{\"total\":1,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"poked\"}},{\"total\":2,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":3,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":11,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"poked\"}},{\"total\":12,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":13,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":21,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"poked\"}},{\"total\":22,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":23,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":21,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"poked\"}},{\"total\":32,\"bias\":{\"name\":\"dolphin\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":33,\"bias\":{\"name\":\"dolphin\"},\"offense\":{\"name\":\"vandalism\"}}]"
+    http_version: 
+  recorded_at: Sat, 01 Jun 2013 22:55:39 GMT
+recorded_with: VCR 2.5.0
