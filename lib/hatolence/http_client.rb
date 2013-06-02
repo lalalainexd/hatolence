@@ -10,7 +10,7 @@ module Hatolence
     end
 
     def root_url
-      "http://localhost:8080/api/#{resource}.json"
+      "http://hate-crimes.herokuapp.com/api/#{resource}.json"
     end
 
     def resource

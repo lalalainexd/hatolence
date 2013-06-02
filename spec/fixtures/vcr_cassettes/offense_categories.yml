@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://hate-crimes.herokuapp.com/api/biases.json
+    uri: http://hate-crimes.herokuapp.com/api/offense_categories.json
     body:
       encoding: US-ASCII
       string: ''
@@ -23,26 +23,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 02 Jun 2013 03:12:47 GMT
+      - Sun, 02 Jun 2013 03:12:48 GMT
       Etag:
-      - "\"77dec0a5715ff5863ce4bb17f1af03e9\""
+      - "\"317bc47bf7663221af75e43dcb561e28\""
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.2/2011-07-09)
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - b23e1b5c7dfe2fc70f245703f2830c8c
+      - b823fa08f0e230493ed9f86fc154a367
       X-Runtime:
-      - '0.007120'
+      - '0.008616'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '69'
+      - '139'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: "[{\"name\":\"cat\"},{\"name\":\"turtle\"},{\"name\":\"fish\"},{\"name\":\"dolphin\"}]"
+      string: "[{\"name\":\"person\",\"offenses\":[{\"name\":\"poked\"},{\"name\":\"dropped\"}]},{\"name\":\"property\",\"offenses\":[{\"name\":\"vandalism\"},{\"name\":\"arson\"}]}]"
     http_version: 
-  recorded_at: Sun, 02 Jun 2013 03:12:47 GMT
+  recorded_at: Sun, 02 Jun 2013 03:12:48 GMT
 recorded_with: VCR 2.5.0

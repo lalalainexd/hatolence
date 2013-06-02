@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8080/api/victim_counts.json
+    uri: http://hate-crimes.herokuapp.com/api/victim_counts.json
     body:
       encoding: US-ASCII
       string: ''
@@ -16,31 +16,33 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: ! 'OK '
     headers:
-      Date:
-      - Sat, 01 Jun 2013 22:55:39 GMT
-      Status:
-      - 200 OK
-      Connection:
-      - close
-      Content-Type:
-      - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge
-      Etag:
-      - "\"dbdf1e185aa8b4670992341ae873d23d\""
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 02 Jun 2013 03:12:46 GMT
+      Etag:
+      - "\"dbdf1e185aa8b4670992341ae873d23d\""
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.2/2011-07-09)
+      X-Rack-Cache:
+      - miss
       X-Request-Id:
-      - bb79e1429d1d6987156140b37ef4b987
+      - 72ed7113d7878040313e3a6d7be2362f
       X-Runtime:
-      - '0.037080'
-      Transfer-Encoding:
-      - chunked
+      - '0.033883'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1045'
+      Connection:
+      - keep-alive
     body:
       encoding: UTF-8
       string: "[{\"total\":1,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"poked\"}},{\"total\":2,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":3,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":4,\"bias\":{\"name\":\"cat\"},\"offense\":{\"name\":\"arson\"}},{\"total\":11,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"poked\"}},{\"total\":12,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":13,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":14,\"bias\":{\"name\":\"turtle\"},\"offense\":{\"name\":\"arson\"}},{\"total\":21,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"poked\"}},{\"total\":22,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":23,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":21,\"bias\":{\"name\":\"fish\"},\"offense\":{\"name\":\"poked\"}},{\"total\":32,\"bias\":{\"name\":\"dolphin\"},\"offense\":{\"name\":\"dropped\"}},{\"total\":33,\"bias\":{\"name\":\"dolphin\"},\"offense\":{\"name\":\"vandalism\"}},{\"total\":34,\"bias\":{\"name\":\"dolphin\"},\"offense\":{\"name\":\"arson\"}},{\"total\":34,\"bias\":{\"name\":\"dolphin\"},\"offense\":{\"name\":\"arson\"}}]"
     http_version: 
-  recorded_at: Sat, 01 Jun 2013 22:55:39 GMT
+  recorded_at: Sun, 02 Jun 2013 03:12:46 GMT
 recorded_with: VCR 2.5.0
