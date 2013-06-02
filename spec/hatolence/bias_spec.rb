@@ -3,7 +3,7 @@ require 'spec_helper'
 module Hatolence
   describe Bias do
 
-    it "returns a list of all biases" do
+    it "returns all biases" do
       VCR.use_cassette('bias_count') do
         expect(Bias.all.count).to eq 4
       end

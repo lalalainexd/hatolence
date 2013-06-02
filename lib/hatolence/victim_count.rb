@@ -1,5 +1,6 @@
 module Hatolence
   class VictimCount
+    include HttpClient
 
     def self.all
       count = self.new
@@ -17,26 +18,18 @@ module Hatolence
     end
 
     def all
-      result = client_get root_url
+      result = get_resource
       JSON.parse(result)
     end
 
     def filter_by_bias(*bias)
-      result = client_get "#{root_url}?#{biases(bias)}"
+      result = get_resource(biases(bias))
       JSON.parse(result)
     end
 
     def filter_by_offense(*offense)
-      result = client_get "#{root_url}?#{offenses(offense)}"
+      result = get_resource(offenses(offense))
       JSON.parse(result)
-    end
-
-    def root_url
-      "http://localhost:8080/api/victim_counts.json"
-    end
-
-    def client_get request
-      result = RestClient.get request
     end
 
     def biases *bias
