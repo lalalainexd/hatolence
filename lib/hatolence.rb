@@ -13,6 +13,7 @@ module Hatolence
 end
 
 require "hatolence/http_client"
+require "hatolence/params_builder"
 require "hatolence/victim_count"
 require "hatolence/bias"
 require "hatolence/bias_category"
