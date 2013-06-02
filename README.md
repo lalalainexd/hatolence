@@ -1,6 +1,6 @@
 # Hatolence
 
-TODO: Write a gem description
+This a gem for hate-crimes api (http://hate-crimes.herokuapp.com)
 
 ## Installation
 
