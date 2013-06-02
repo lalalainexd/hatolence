@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/biases.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 01 Jun 2013 23:13:52 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"77dec0a5715ff5863ce4bb17f1af03e9\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8b4189f5b727940d3e962eb59f23effe
+      X-Runtime:
+      - '0.012534'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "[{\"name\":\"cat\"},{\"name\":\"turtle\"},{\"name\":\"fish\"},{\"name\":\"dolphin\"}]"
+    http_version: 
+  recorded_at: Sat, 01 Jun 2013 23:13:52 GMT
+recorded_with: VCR 2.5.0
